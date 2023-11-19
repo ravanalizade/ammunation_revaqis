@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ammunation</title>
+    <link rel="icon" href="img/logo-no-background.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+
+
+    <!-- Header Start-->
+    <section id="header">
+        <a href="#"><img src="img/logo-no-background.png" class="logo" alt=""></a>
+        <div class="search-bar">
+            <form id="form" action="#">
+                <label id="search-label" for="search">
+                    <span>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+                    <input id="search" type="text" placeholder="Search Anything..." aria-label="Search"
+                        autocomplete="off">
+                </label>
+            </form>
+        </div>
+        <div>
+
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active"  href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-user"><details>
+                    <summary><i class="fa-solid fa-user"></i></summary>
+                    <a href="login.html">Login</a>
+                    <a href="register.html">Register</a>
+                </details></li>
+                <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+            <i id="bar"  class="fa-solid fa-bars"></i>
+        </div>
+    </section>
+    <!-- Header end -->
+
+    <!-- Hero start -->
+    <section id="page-header">
+        <h2>Our Products</h2>
+        <p>Save up to 40% off with coupons!</p>
+    </section>
+    <!-- Hero End -->
+    <section id="shop">
+        <div class="container">
+            <div class="shop-content">
+                <div class="product-filters-content">
+                    <div class="product-filters-part-one">
+                        <ul type="none" class="product-filters-part-one-content">
+                            <li class="product-filters-part-one-list">
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li class="product-filters-part-one-list">  
+                                /
+                            </li>
+                            <li class="product-filters-part-one-list">
+                                <a href="#">Shop</a>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="product-filters-two-content">
+                        <div class="product-filters-head">
+                            <h2>Filters</h2>
+                            <button id="clear-btn">Clear All</button>
+                        </div>
+                        <div class="product-filters-choose">
+            
+                        </div>
+                        <div class="product-filters-category">
+                            <h3>Category</h3>
+                            <label for="product-filters-category-woman">
+                                <input type="checkbox" id="product-filters-category-woman">
+                                <span>Assault Rifles</span>
+                            </label>
+                            <label for="product-filters-category-man">
+                                <input type="checkbox" id="product-filters-category-man">
+                                <span>Handguns</span>
+                            </label>
+                            <label for="product-filters-category-watch">
+                                <input type="checkbox" id="product-filters-category-watch">
+                                <span>Sniper Rifles</span>
+                            </label>
+                            <label for="product-filters-category-kids">
+                                <input type="checkbox" id="product-filters-category-kids">
+                                <span>Equipment</span>
+                            </label>
+                            
+                        </div>
+                        <div class="product-filters-brands">
+                            <h3>Brands</h3>
+                            <label for="product-filters-brands-shovia">
+                                <input type="checkbox" id="product-filters-brands-shovia">
+                                <span>Remington Outdoor</span>
+                            </label>
+                            <label for="product-filters-brands-fusion">
+                                <input type="checkbox" id="product-filters-brands-fusion">
+                                <span>Sturm, Ruger Co.</span>
+                            </label>
+                            <label for="product-filters-brands-hunter-shoes">
+                                <input type="checkbox" id="product-filters-brands-hunter-shoes">
+                                <span>Taurus International</span>
+                            </label>
+                            <label for="product-filters-brands-club-shoes">
+                                <input type="checkbox" id="product-filters-brands-club-shoes">
+                                <span>Heckler and Koch</span>
+                            </label>
+                            <label for="product-filters-brands-club-shoes">
+                                <input type="checkbox" id="product-filters-brands-club-shoes">
+                                <span>Smith & Wesson</span>
+                            </label>
+                            <label for="product-filters-brands-club-shoes">
+                                <input type="checkbox" id="product-filters-brands-club-shoes">
+                                <span>Winchester</span>
+                            </label>
+                        </div>
+                        <div class="product-filters-price">
+                            <h3>Price</h3>
+                            <label for="product-filters-price-under-$50">
+                                <input type="checkbox" id="product-filters-price-under-$50">
+                                <span>Under $50</span>
+                            </label>
+                            <label for="product-filters-price-$50-to-$100">
+                                <input type="checkbox" id="product-filters-price-$50-to-$100">
+                                <span>$50 to $100</span>
+                            </label>
+                            <label for="product-filters-price-$100-to-$150">
+                                <input type="checkbox" id="product-filters-price-$100-to-$150">
+                                <span>$100 to $150</span>
+                            </label>
+                            <label for="product-filters-price-$150-to-$200">
+                                <input type="checkbox" id="product-filters-price-$150-to-$200">
+                                <span>$150 to $200</span>
+                            </label>
+                            <label for="product-filters-price-$200-to-$300">
+                                <input type="checkbox" id="product-filters-price-$200-to-$300">
+                                <span>$200 to $300</span>
+                            </label>
+                            <label for="product-filters-price-$300-to-$500">
+                                <input type="checkbox" id="product-filters-price-$300-to-$500">
+                                <span>$300 to $500</span>
+                            </label>
+                            <label for="product-filters-price-$500-to-$1000">
+                                <input type="checkbox" id="product-filters-price-$500-to-$1000">
+                                <span>$500 to $1000</span>
+                            </label>
+                            <label for="product-filters-price-over-to-$1000">
+                                <input type="checkbox" id="product-filters-price-over-to-$100">
+                                <span>Over to $1000</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                    <!-- Product Start -->
+    <div id="product1" class="section-p1"> 
+        <div id="main-content">
+            <h2>New Products</h2>
+            <div id="product-list">
+                <div class="pro-container">
+                    <div class="pro"  onclick="window.location.href='sproduct.html';"      id="product-card">
+                        <img id="product-image" src="img/products/R.jpeg" alt="">
+                        <div class="des">
+                            <span>Smith & Wesson</span>
+                            <h5>Smith & Wesson M&P Shield</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$179</h4>
+                        </div>
+                        <a href="#" id="cart"><i class="fa-solid fa-cart-shopping  "></i></a>
+                    </div>
+                    <div class="pro" onclick="window.location.href='sproduct.html';"  id="product-card">
+                        <img  id="product-image" src="img/products/W70.jpeg" alt="">
+                        <div class="des">
+                            <span>Winchester</span>
+                            <h5>Winchester Model 70</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$399</h4>
+                        </div>
+                        <a href="#" id="cart"><i class="fa-solid fa-cart-shopping  "></i></a>
+                    </div>
+                    <div class="pro" onclick="window.location.href='sproduct.html';"  id="product-card">
+                        <img  id="product-image" src="img/products/rem-700-sps-review-file.jpg" alt="">
+                        <div class="des">
+                            <span>Remington Outdoor</span>
+                            <h5>Remington 700</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$289</h4>
+                        </div>
+                        <a href="#" id="cart"><i class="fa-solid fa-cart-shopping  "></i></a>
+                    </div>
+                    <div class="pro" onclick="window.location.href='sproduct.html';"  id="product-card">
+                        <img  id="product-image" src="img/products/ar15.jpg" alt="">
+                        <div class="des">
+                            <span>Taurus International</span>
+                            <h5>AR-15</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$549</h4>
+                        </div>
+                        <a href="#" id="cart"><i class="fa-solid fa-cart-shopping  "></i></a>
+                    </div>
+                    <div class="pro" onclick="window.location.href='sproduct.html';"  id="product-card">
+                        <img   id="product-image" src="img/products/g36.jpeg" alt="">
+                        <div class="des">
+                            <span>Heckler and Koch</span>
+                            <h5>G36</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$479</h4>
+                        </div>
+                        <a href="#" id="cart"><i class="fa-solid fa-cart-shopping  "></i></a>
+                    </div>
+                    <div class="pro" onclick="window.location.href='sproduct.html';"  id="product-card">
+                        <img  id="product-image" src="img/products/LCP.jpeg" alt="">
+                        <div class="des">
+                            <span>Sturm, Ruger Co.</span>
+                            <h5>Ruger LCP</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$99</h4>
+                        </div>
+                        <a href="#" id="cart"><i class="fa-solid fa-cart-shopping  "></i></a>
+                    </div>
+                    <div class="pro" onclick="window.location.href='sproduct.html';"  id="product-card">
+                        <img  id="product-image" src="img/products/barret.jpeg" alt="">
+                        <div class="des">
+                            <span>Taurus International</span>
+                            <h5>Barret 98B</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$1499</h4>
+                        </div>
+                        <a href="#" id="cart"><i class="fa-solid fa-cart-shopping  "></i></a>
+                    </div>
+                    <div class="pro" onclick="window.location.href='sproduct.html';"  id="product-card">
+                        <img  id="product-image" src="img/products/74.jpg" alt="">
+                        <div class="des">
+                            <span>Heckler and Koch</span>
+                            <h5>AK-74</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$359</h4>
+                        </div>
+                        <a href="#" id="cart"><i class="fa-solid fa-cart-shopping  "></i></a>
+                    </div>
+                    <div class="pro" onclick="window.location.href='sproduct.html';"   id="product-card">
+                        <img  id="product-image" src="img/products/mdt.jpg" alt="">
+                        <div class="des">
+                            <span>Winchester</span>
+                            <h5>MDT HS3</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$739</h4>
+                        </div>
+                        <a href="#" id="cart"><i class="fa-solid fa-cart-shopping  "></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+    </div>
+    <!-- Praduct end -->
+
+            </div>
+        </div>
+    </section>
+  <!-- pagination start -->
+<section id="pagination"  class="section-p1">
+<a href="#">1</a>
+<a href="#">2</a>
+<a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+</section>
+  <!-- pagination end -->
+
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign Up For NewsLetters</h4>
+            <p>Get E-mail updates about our latest shop and special offers.</p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your email address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+
+    <!-- footer start -->
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo2" src="img/logo-no-background.png" alt="">
+            <h4>Contact</h4>
+            <p> <strong>Adress:</strong>  </p>
+            <p> <strong>Phone:</strong>  </p>
+            <p> <strong>Hours:</strong>10:00 - 18:00 , Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-pinterest-p"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact us</a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In </a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="img/pay/app.jpg" alt="">
+                <img src="img/pay/play.jpg" alt="">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="img/pay/pay.png" alt="">
+        </div>
+        
+    </footer>
+    <!-- footer end -->
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

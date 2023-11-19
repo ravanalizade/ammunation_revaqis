@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ammunation</title>
+    <link rel="icon" href="img/logo-no-background.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    
+ 
+
+  
+    <button id="scrollTopButton"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <!-- Header Start-->
+    <section id="header">
+        <a href="#"><img src="img/logo-no-background.png" class="logo" alt=""></a>
+        <div class="search-bar">
+            <form id="form" action="#">
+                <label id="search-label" for="search">
+                    <span>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+                    <input id="search" type="text" placeholder="Search Anything..." aria-label="Search"
+                        autocomplete="off">
+                </label>
+            </form>
+        </div>
+        <div>
+
+            <ul id="navbar">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-user"><details>
+                    <summary><i class="fa-solid fa-user"></i></summary>
+                    <a href="login.html">Login</a>
+                    <a href="register.html">Register</a>
+                </details></li>
+                <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+            <i id="bar"  class="fa-solid fa-bars"></i>
+        </div>
+    </section>
+    <!-- Header end -->
+
+
+    <!-- Hero start -->
+    <section id="hero">
+        <h4>Trade-in-offer</h4>
+        <h2>Super value deals</h2>
+        <h1>On all products</h1>
+        <p>Save more with & up to 40% off!</p>
+        <button>Shop Now</button>
+    </section>
+    <!-- Hero End -->
+
+    <!-- Feature start -->
+    <section id="feature" class="section-p1">
+        <div class="fe-box">
+            <img src="img/features/f1.png" alt="">
+            <h6>Free Shipping </h6>
+        </div>
+        <div class="fe-box">
+            <img src="img/features/f2.png" alt="">
+            <h6>Online Order </h6>
+        </div>
+        <div class="fe-box">
+            <img src="img/features/f3.png" alt="">
+            <h6>Save Money </h6>
+        </div>
+        <div class="fe-box">
+            <img src="img/features/f4.png" alt="">
+            <h6>Promotions </h6>
+        </div>
+        <div class="fe-box">
+            <img src="img/features/f5.png" alt="">
+            <h6>Happy Sell </h6>
+        </div>
+        <div class="fe-box">
+            <img src="img/features/f6.png" alt="">
+            <h6>7/24 Support</h6>
+        </div>
+    </section>
+    <!-- Feature end -->
+
+
+    <!-- Product Start -->
+    <section id="product1" class="section-p1">
+        <h2>Featured Products</h2>
+
+        <div class="pro-container">
+            <div class="pro " onclick="window.location.href='sproduct.html';" id="product-card">
+                <img id="product-image" src="img/products/R.jpeg" alt="">
+                <div class="des">
+                    <span>Smith & Wesson</span>
+                    <h5>Smith & Wesson M&P Shield </h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$50</h4>
+                </div>
+                <a href="#" id="cart"><i class="fa-solid fa-cart-shopping  "></i></a>
+            </div>
+            <div class="pro" onclick="window.location.href='sproduct.html';"  id="product-card">
+                <img  id="product-image" src="img/products/W70.jpeg" alt="">
+                <div class="des">
+                    <span>Ruger (Sturm, Ruger & Co.)</span>
+                    <h5>Ruger LCP </h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$70</h4>
+                </div>
+                <a href="#" id="cart"><i class="fa-solid fa-cart-shopping "></i></a>
+                <!-- <a href="#" id="cart" class="cart1"><i class="fa-solid fa-arrow-right-arrow-left"></i></a> -->
+            </div>
+            <div class="pro" onclick="window.location.href='sproduct.html';"  id="product-card">
+                <img   id="product-image" src="img/products/rem-700-sps-review-file.jpg" alt="">
+                <div class="des">
+                    <span>Ruger (Sturm, Ruger & Co.)</span>
+                    <h5> Ruger 10/22 </h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$49</h4>
+                </div>
+                <a href="#" id="cart"><i class="fa-solid fa-cart-shopping  "></i></a>
+            </div>
+            <div class="pro" onclick="window.location.href='sproduct.html';"  id="product-card">
+                <img  id="product-image" src="img/products/ar15.jpg" alt="">
+                <div class="des">
+                    <span>Glock</span>
+                    <h5>Glock 19 </h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$30</h4>
+                </div>
+                <a href="#" id="cart"><i class="fa-solid fa-cart-shopping  "></i></a>
+            </div>
+            <div class="pro" onclick="window.location.href='sproduct.html';"   id="product-card">
+                <img  id="product-image" src="img/products/g36.jpeg" alt="">
+                <div class="des">
+                    <span>Sig Sauer </span>
+                    <h5>Remington 700 </h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$50</h4>
+                </div>
+                <a href="#" id="cart"><i class="fa-solid fa-cart-shopping  "></i></a>
+            </div>
+            <div class="pro" onclick="window.location.href='sproduct.html';"   id="product-card">
+                <img  id="product-image" src="img/products/LCP.jpeg" alt="">
+                <div class="des">
+                    <span>Colt's Manufacturing Company</span>
+                    <h5>Colt 1911 </h5>
+
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$69</h4>
+                </div>
+                <a href="#" id="cart"><i class="fa-solid fa-cart-shopping  "></i></a>
+            </div>
+            <div class="pro"  onclick="window.location.href='sproduct.html';"  id="product-card">
+                <img  id="product-image" src="img/products/mpx.png" alt="">
+                <div class="des">
+                    <span>Sig Sauer</span>
+                    <h5>Sig Sauer MPX </h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$75</h4>
+                </div>
+                <a href="#" id="cart"><i class="fa-solid fa-cart-shopping  "></i></a>
+            </div>
+            <div class="pro" onclick="window.location.href='sproduct.html';"  id="product-card">
+                <img  id="product-image" src="img/products/74.jpg" alt="">
+                <div class="des">
+                    <span>Mossberg </span>
+                    <h5>Mossberg 500s</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$90</h4>
+                </div>
+                <a href="#" id="cart"><i class="fa-solid fa-cart-shopping  "></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- Product end -->
+
+
+    <!-- Banner Start -->
+    <section id="banner" class="section-m1">
+        <h4>Repair Services</h4>
+        <h2>Up to <span>40% off</span> - All FireArms & Weapons</h2>
+        <button class="normal">Explore More</button>
+    </section>
+    <!-- Banner end -->
+
+    <!-- Praduct part2 start -->
+    <section id="product1" class="section-p1">
+        <h2>New Arrivals</h2>
+        
+        <div class="pro-container">
+            <div class="pro" onclick="window.location.href='sproduct.html';"  id="product-card">
+                <img  id="product-image" src="img/products/beretta92.jpg" alt="">
+                <div class="des">
+                    <span>Beretta</span>
+                    <h5> Beretta 92</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$90</h4>
+                </div>
+                <a href="#" id="cart"><i class="fa-solid fa-cart-shopping  "></i></a>
+            </div>
+            <div class="pro" onclick="window.location.href='sproduct.html';"   id="product-card">
+                <img  id="product-image" src="img/products/beretta a400.webp" alt="">
+                <div class="des">
+                    <span>Beretta </span>
+                    <h5>Beretta A400</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$139</h4>
+                </div>
+                <a href="#" id="cart"><i class="fa-solid fa-cart-shopping  "></i></a>
+            </div>
+            <div class="pro" onclick="window.location.href='sproduct.html';"   id="product-card">
+                <img  id="product-image" src="img/products/mossberg.webp" alt="">
+                <div class="des">
+                    <span>Mossberg</span>
+                    <h5> Mossberg 500</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$80</h4>
+                </div>
+                <a href="#" id="cart"><i class="fa-solid fa-cart-shopping  "></i></a>
+            </div>
+            <div class="pro" onclick="window.location.href='sproduct.html';"  id="product-card">
+                <img  id="product-image" src="img/products/mossberg590.jpg" alt="">
+                <div class="des">
+                    <span>Mossberg</span>
+                    <h5>Mossberg 590 </h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$120</h4>
+                </div>
+                <a href="#" id="cart"><i class="fa-solid fa-cart-shopping  "></i></a>
+            </div>
+            <div class="pro" onclick="window.location.href='sproduct.html';"  id="product-card">
+                <img  id="product-image" src="img/products/colt 1911.jpg" alt="">
+                <div class="des">
+                    <span>Colt's Manufacturing Company</span>
+                    <h5> Colt 1911</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$45</h4>
+                </div>
+                <a href="#" id="cart"><i class="fa-solid fa-cart-shopping  "></i></a>
+            </div>
+            <div class="pro" onclick="window.location.href='sproduct.html';"   id="product-card">
+                <img  id="product-image" src="img/products/colt ar15.jpg" alt="">
+                <div class="des">
+                    <span>Colt's Manufacturing Company</span>
+                    <h5>Colt AR-15 </h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$149</h4>
+                </div>
+                <a href="#" id="cart"><i class="fa-solid fa-cart-shopping  "></i></a>
+            </div>
+            <div class="pro" onclick="window.location.href='sproduct.html';"  id="product-card">
+                <img  id="product-image" src="img/products/winchester.webp" alt="">
+                <div class="des">
+                    <span>Winchester Repeating Arms</span>
+                    <h5>Winchester Model 70</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$99</h4>
+                </div>
+                <a href="#" id="cart"><i class="fa-solid fa-cart-shopping  "></i></a>
+            </div>
+            <div class="pro" onclick="window.location.href='sproduct.html';"   id="product-card">
+                <img  id="product-image" src="img/products/smith&wesson.webp" alt="">
+                <div class="des">
+                    <span>Smith & Wesson:</span>
+                    <h5>Smith & Wesson M&P Shield</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$88</h4>
+                </div>
+                <a href="#" id="cart"><i class="fa-solid fa-cart-shopping  "></i></a>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign Up For NewsLetters</h4>
+            <p>Get latest updates about our shop and special offers.</p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your email address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+
+    <!-- footer start -->
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo2" src="img/logo-no-background.png" alt="">
+            <h4>Contact</h4>
+            <p> <strong>Adress:</strong>  </p>
+            <p> <strong>Phone:</strong>  </p>
+            <p> <strong>Hours:</strong>10:00 - 18:00 , Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-pinterest-p"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact us</a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In </a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="img/pay/app.jpg" alt="">
+                <img src="img/pay/play.jpg" alt="">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="img/pay/pay.png" alt="">
+        </div>
+        
+    </footer>
+    <!-- footer end -->
+    
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
