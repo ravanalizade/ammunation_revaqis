@@ -211,6 +211,7 @@ p {
     font-size: 16px;
     color: #465b52;
     margin: 15px 0 20px 0;
+    
 }
 
 .section-p1 {
@@ -445,6 +446,8 @@ body {
     background-repeat: repeat;
     background-position: 20% 30%;
     background-color: #041e42;
+    height: 200px;
+    
 }
 
 #newsletter h4 {
@@ -457,15 +460,15 @@ body {
     font-size: 14px;
     font-weight: 600;
     color: #818ea0;
+    
 }
 
-#newsletter p span {
-    color: #ffbd27;
-}
+
 
 #newsletter .form {
-    display: flex;
-    width: 40%;
+    width: 500px!important;
+    height: 50px!important;
+    
 
 }
 
@@ -477,8 +480,9 @@ body {
     border: 1px solid transparent;
     border-radius: 4px;
     outline: none;
-    border-top-left-radius: 0;
+    border-top-left-radius: 60cm;
     border-bottom-left-radius: 0;
+    
 }
 
 #newsletter button {
@@ -487,6 +491,7 @@ body {
     white-space: nowrap;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+    
 }
 
 footer {
@@ -1271,11 +1276,14 @@ width: 70px;
 #hero h1 {
     color: #ffffff;
 }
+#hero p {
+    color: #a5a5a5;
+}
 
 #hero button {
 
     background-color: transparent;
-    color: #ffffff;
+    color: #ffffffa6;
     border: 0;
     padding: 14px 80px 14px 65px;
     background-repeat: no-repeat;
