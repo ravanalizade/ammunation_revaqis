@@ -12,7 +12,7 @@ const register = () => {
         password: passwd,
     }
 
-    fetch(apiUrl, {
+    fetch(`${apiUrl}/register`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
