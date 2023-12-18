@@ -72,13 +72,36 @@ app.get("/", (req, res) => {
     res.send("Base Directory");
 });
 
-app.post("/", (req, res) => {           // frontdan back ende info atirsan
+app.post("/register", (req, res) => {           // frontdan back ende info atirsan
     data = req.body;
     username = data.username;
     email = data.email;
     passwd = data.password;
-    addUser(username, email, passwd);   // 35 deki funku cag
+    addUser(username, passwd, email);   // 35 deki funku cag
 
     res.send("OK, Added");              // fronta elave edir ve ekrana verir    
     getAllUsers();
+});
+app.post("/login", (req, res) => {
+    const data = req.body;
+    const email = data.email;
+    const password = data.password;
+    res.send(data)
+    const selectQuery = 'SELECT * FROM users WHERE email = ? AND password = ?';
+
+    // Execute the query
+    db.get(selectQuery, [email, password], (err, row) => {
+        if (err) {
+            console.error(err.message);
+            res.status(500).send("Internal Server Error");
+        } else {
+            if (row) {
+                // User found, send a success response
+                res.status(200).send("Login successful");
+            } else {
+                // User not found, send an error response
+                res.status(401).send("Invalid credentials");
+            }
+        }
+    });
 });

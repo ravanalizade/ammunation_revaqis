@@ -26,11 +26,11 @@
                 <header>Login</header>
                 <form action="#">
                     <div class="field input-field">
-                        <input type="email" placeholder="E-mail" class="input">
+                        <input type="email" placeholder="E-mail" class="input" id="loginEmailInput">
                     </div>
 
                     <div class="field input-field">
-                        <input type="password" placeholder="Password" class="password">
+                        <input type="password" placeholder="Password" class="password" id="loginPasswdInput">
                         <i class='bx bx-hide eye-icon'></i>
                     </div>
 
@@ -39,7 +39,7 @@
                     </div>
 
                     <div class="field input-field">
-                      <button >Login</button>
+                      <button onclick="login()" >Login</button>
                     </div>
 
                 </form>
@@ -69,7 +69,7 @@
     </section>
 
 
-
+    <script src="login.js"></script>
 </body>
 
 </html>
